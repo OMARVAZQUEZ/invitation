@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { MapPin, Gift, Clock, Mail } from 'lucide-react';
-import styles from './WeddingInvitation.module.css';
+import React, { useState, useEffect } from "react";
+import { MapPin, Gift, Clock, Mail } from "lucide-react";
+import styles from "./WeddingInvitation.module.css";
 
 export default function WeddingInvitation() {
   const [timeLeft, setTimeLeft] = useState({
@@ -11,7 +11,7 @@ export default function WeddingInvitation() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('2023-12-31T18:00:00'); // Set your wedding date here
+    const weddingDate = new Date("2024-11-07T18:00:00"); // Set your wedding date here
     const timer = setInterval(() => {
       const now = new Date();
       const difference = weddingDate.getTime() - now.getTime();
@@ -30,19 +30,17 @@ export default function WeddingInvitation() {
   return (
     <div className={styles.container}>
       <div className={styles.reveal_box}>
-      <header className={styles.header}>
-        <div className={styles.headerContent}>
-          <h1 className={styles.title}>Conferencia para </h1>
-          <h2 className={styles.subtitle}> MATRIMONIOS </h2>
-          <p className={styles.date}>
-                        7 • NOVIEMBRE • 24
-                    </p>
-        </div>
-      </header>
+        <header className={styles.header}>
+          <div className={styles.headerContent}>
+            <h1 className={styles.title}>Conferencia para </h1>
+            <h2 className={styles.subtitle}> MATRIMONIOS </h2>
+            <p className={styles.date}>7 • NOVIEMBRE • 24</p>
+          </div>
+        </header>
       </div>
 
       <main className={styles.main}>
-        <section className= {`${styles.section} ${styles.counter}`}>
+        <section className={`${styles.section} ${styles.counter}`}>
           <h2 className={styles.sectionTitle}>Faltan</h2>
           <div className={styles.countdown}>
             <div className={styles.countdownItem}>
@@ -62,9 +60,16 @@ export default function WeddingInvitation() {
               <p>Segundos</p>
             </div>
           </div>
+          <div> 07 DE NOVIEMBRE DEL 2024</div>
         </section>
 
         <section className={styles.section}>
+        
+          <blockquote>
+            "Y sobre todas estas cosas, vestíos de amor, que es el vínculo perfecto"
+            <p> Colosenses 3:14</p>
+          </blockquote>
+          
           <h2 className={styles.sectionTitle}>Confirmar Asistencia</h2>
           <a
             href="https://wa.me/1234567890?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20boda"
@@ -107,18 +112,38 @@ export default function WeddingInvitation() {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Nuestros Momentos</h2>
           <div className={styles.gallery}>
-            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"  className={styles.galleryImage} />
-            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" className={styles.galleryImage} />
-            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"  className={styles.galleryImage} />
-            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"  className={styles.galleryImage} />
-            <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" className={styles.galleryImage} />
-            <img src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" className={styles.galleryImage} />
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              className={styles.galleryImage}
+            />
+            <img
+              src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              className={styles.galleryImage}
+            />
+            <img
+              src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              className={styles.galleryImage}
+            />
+            <img
+              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              className={styles.galleryImage}
+            />
+            <img
+              src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              className={styles.galleryImage}
+            />
+            <img
+              src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              className={styles.galleryImage}
+            />
           </div>
         </section>
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>Mesa de Regalos</h2>
-          <p className={styles.giftText}>Si deseas hacernos un regalo, aquí tienes algunas opciones:</p>
+          <p className={styles.giftText}>
+            Si deseas hacernos un regalo, aquí tienes algunas opciones:
+          </p>
           <div className={styles.giftRegistry}>
             <a href="#" className={styles.giftLink}>
               <Gift className={styles.icon} />
