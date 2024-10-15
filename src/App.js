@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useState } from 'react';
+import Header from './components/components extra/Header.jsx';
+import Countdown from './components/components extra/Countdown.jsx';
+import EventDetails from './components/components extra/EventDetails.jsx';
+import BiblicalQuote from './components/components extra/BiblicalQuote.jsx';
+import ReserveButton from './components/components extra/ReserveButton.jsx';
+import PhotoGallery from './components/components extra/PhotoGallery.jsx';
+import BackgroundMusic from './components/components extra/BackgroundMusic.jsx';
+import WeddingInvitation from './components/WeddingInvitation.tsx';
+import './App.css'; // Importa los estilos
 
-function App() {
+const App = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <WeddingInvitation />
     </div>
   );
-}
+};
 
 export default App;

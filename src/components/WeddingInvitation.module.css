@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+.container {
+  font-family: 'Playfair Display', serif;
+  color: #78350f;
+  background: linear-gradient(to bottom, #fffbeb, #fef3c7);
+  min-height: 100vh;
+}
+.reveal_box {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.header {
+  text-align: center;
+  padding: 0rem;
+
+  background-image: url('/public/esposos.jpeg');
+ /* background-image: url('https://www.bodachiaychance.com/Imagenes/Portada-2.jpg');*/
+  background-position-x: center;
+  background-position-y: 65%;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  animation: 2s 0.5s both paused scale-in-down;
+  animation-play-state: running;
+  position: relative;
+}
+.headerContent {
+  padding: 0px 2px 60px 2px;
+  box-sizing: border-box;
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .75) 100%);
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 500;
+  font-family:  'Great Vibes', cursive;
+  margin-bottom: 10px;
+  padding-top: 50px;
+}
+.subtitle{
+  font-family:  'Cormorant SC', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.date {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+
+.main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 0rem;
+}
+
+.section {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+ .counter{
+  background-color: #937a3e;
+  color: white;
+  border-radius: 0px;
+  background-image: url(/public/redox-01.png);
+}
+.sectionTitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.countdownItem {
+  text-align: center;
+}
+
+.countdownValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.whatsappButton {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.whatsappButton:hover {
+  background-color: #128C7E;
+}
+
+.mapContainer {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.dressCode {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.dressCodeItem {
+  text-align: center;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.galleryImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.giftText {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.giftRegistry {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.giftLink {
+  text-align: center;
+  color: #78350f;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.giftLink:hover {
+  color: #92400e;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #fef3c7;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 5ch;
+    letter-spacing: 10px;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .countdownValue {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
