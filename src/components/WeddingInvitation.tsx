@@ -119,7 +119,7 @@ export default function WeddingInvitation() {
             </a>
             
             <a
-              href="https://wa.me/9618708310?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20Conferencia%20de%20Matrimonios"
+              href="https://wa.me/9611524939?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20Conferencia%20de%20Matrimonios"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.whatsappButton}

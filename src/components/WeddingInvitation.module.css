@@ -150,7 +150,9 @@ padding-top: 20px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
 }
 .churchContent {
   text-align: center;
