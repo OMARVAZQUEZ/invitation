@@ -32,6 +32,11 @@
   animation-play-state: running;
   position: relative;
 }
+@media (max-width: 768px) {
+  .header {
+      background-size: contain; /* Cambia a contain si se ve mejor */
+  }
+}
 .headerContent {
   padding: 0px 2px 60px 2px;
   box-sizing: border-box;
