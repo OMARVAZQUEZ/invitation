@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MapPin, Gift, Clock, Mail } from "lucide-react";
 import styles from "./WeddingInvitation.module.css";
-
 import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function WeddingInvitation() {
@@ -47,7 +45,7 @@ export default function WeddingInvitation() {
       <main className={styles.main}>
         <section className={styles.section}>
           <blockquote className={styles.textInvitation}>
-            <p>QUERIDOS HERMANOS EN CRISTO.</p>
+            <p className={styles.subtitle}>QUERIDOS HERMANOS EN CRISTO.</p>
 
             <p>
               Con mucho cariño, les extendemos una cordial invitación a nuestra
@@ -89,7 +87,7 @@ export default function WeddingInvitation() {
               <p>Segundos</p>
             </div>
           </div>
-          <div> 07 DE NOVIEMBRE DEL 2024</div>
+          <div className={styles.date}> 7 • NOVIEMBRE • 24</div>
           <blockquote className={styles.textInvitationBiblia}>
             <p>
               "Y sobre todas estas cosas, vestíos de amor, que es el vínculo
@@ -108,12 +106,9 @@ export default function WeddingInvitation() {
           <div className={styles.containerBtn}>
             <a
               className={styles.locationButton}
-              onClick={() =>
-                window.open(
-                  "https://maps.app.goo.gl/vayRnGAky3FRRydz5",
-                  "_blank"
-                )
-              }
+              href="https://maps.app.goo.gl/vayRnGAky3FRRydz5"
+              target="_blank"
+              rel="noreferrer noopener"
             >
              <FaMapMarkerAlt/>  Ver Ubicación
             </a>
@@ -121,7 +116,7 @@ export default function WeddingInvitation() {
             <a
               href="https://wa.me/529611524939?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20Conferencia%20de%20Matrimonios"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer noopener"
               className={styles.whatsappButton}
             >
               <FaWhatsapp/>

@@ -114,7 +114,7 @@
 .countdown {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .countdownItem {
@@ -122,9 +122,9 @@
 }
 
 .countdownValue {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 500;
-  font-family: "Cormorant SC", serif;
+  font-family: "Cormorant SC";
 }
 .ImageChurch {
   display: flex;
@@ -231,8 +231,12 @@ a.whatsappButton{
   margin: 0px;
   max-width: 1200px;
 }
+.textInvitation p{
+  font-family: "Cormorant SC", serif;
+  font-size: 1.8em;
+}
 .textInvitationBiblia p {
-  font-size: 0.7em;
+  font-size: 1.5em;
 }
 .dressCode {
   display: flex;
@@ -315,7 +319,7 @@ a.whatsappButton{
   }
 
   .countdownValue {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .gallery {
