@@ -101,9 +101,12 @@ export default function WeddingInvitation() {
 
         <section className={styles.section}>
           <div className={styles.churchContent}>
+            <div className={styles.headerContent}>
             <h1 className={styles.title}> Bienvenidos a su Casa</h1>
+            </div>
+           
           <div className={styles.containerBtn}>
-            <button
+            <a
               className={styles.locationButton}
               onClick={() =>
                 window.open(
@@ -113,7 +116,7 @@ export default function WeddingInvitation() {
               }
             >
              <FaMapMarkerAlt/>  Ver Ubicación
-            </button>
+            </a>
             
             <a
               href="https://wa.me/9618708310?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20Conferencia%20de%20Matrimonios"
@@ -128,11 +131,11 @@ export default function WeddingInvitation() {
           </div>
         </section>
 
-        <section className={styles.section}></section>
+       
       </main>
 
       <footer className={styles.footer}>
-        <p>&copy; 2024 Elohim Tuxtla.</p>
+        <p>&copy; 2024 Elohim Tuxtla Gtz</p>
       </footer>
     </div>
   );

@@ -49,7 +49,7 @@
   font-weight: 500;
   font-family: "Great Vibes", cursive;
   margin-bottom: 10px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .subtitle {
   font-family: " SC SC", serif;
@@ -83,7 +83,7 @@
   color: white;
   border-radius: 0px;
   background-image: url(/public/redox-01.png);
-  height: 55vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,7 +155,7 @@ padding-top: 20px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 90vh;
+  height: 100vh;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -177,21 +177,22 @@ padding-top: 20px;
   font-size: 1em;
   letter-spacing: 1px;
   text-decoration: none;
-  width: 90%;
+  width: 100%;
   letter-spacing: 2px;
   max-width: 250px;
 }
-
-.whatsappButton:hover {
-  background-color: #128c7e;
+a.whatsappButton{
+  max-width: 250px;
 }
+
+
 .locationButton {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   color: #fff;
-  background-color: #937a3e;
+  background-color: #2e10c4;
   border-radius: 50px;
   padding: 20px 20px;
   text-align: center;
@@ -203,10 +204,9 @@ padding-top: 20px;
   max-width: 250px;
   margin: 0px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
-.locationButton:hover {
-  background-color: #2e10c4;
-}
+
 
 .mapContainer {
   aspect-ratio: 16 / 9;
@@ -215,7 +215,7 @@ padding-top: 20px;
 }
 .textInvitation {
   text-align: center;
-  padding: 0px;
+  padding: 0px 10px;
   margin: 0px;
   max-width: 1200px;
 }
@@ -276,7 +276,8 @@ padding-top: 20px;
 
 .footer {
   text-align: center;
-  padding: 1.5rem;
+  padding-top: 0px;
+  margin: 0px;
 }
 .footer p {
   font-size: 10px;
