@@ -322,7 +322,8 @@ a.whatsappButton{
 }
 @media (max-width: 768px) {
   .header,.churchContent {
-      background-size: cover; 
+      background-attachment: scroll; 
       max-width: 100vh;
+      max-height: 100vh;
   }
 }
