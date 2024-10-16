@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { MapPin, Gift, Clock, Mail } from "lucide-react";
 import styles from "./WeddingInvitation.module.css";
 
+import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+
 export default function WeddingInvitation() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -32,14 +34,41 @@ export default function WeddingInvitation() {
       <div className={styles.reveal_box}>
         <header className={styles.header}>
           <div className={styles.headerContent}>
-            <h1 className={styles.title}>Conferencia para </h1>
-            <h2 className={styles.subtitle}> MATRIMONIOS </h2>
+            <h1 className={styles.title}> Invitación</h1>
+            <h2 className={styles.subtitle}>Conferencia para MATRIMONIOS </h2>
             <p className={styles.date}>7 • NOVIEMBRE • 24</p>
+          </div>
+          <div>
+            <h2>CUPO LIMITADO</h2>
           </div>
         </header>
       </div>
 
       <main className={styles.main}>
+        <section className={styles.section}>
+          <blockquote className={styles.textInvitation}>
+            <p>QUERIDOS HERMANOS EN CRISTO.</p>
+
+            <p>
+              Con mucho cariño, les extendemos una cordial invitación a nuestra
+              Conferencia para Matrimonios.
+            </p>
+
+            <p>
+              Este evento especial está diseñado para fortalecer el amor y la
+              unión en el matrimonio, y profundizar en temas que son esenciales
+              para una vida en pareja plena y armoniosa.
+            </p>
+
+            <p>
+              {" "}
+              Esperamos verlos allí, listos para compartir un tiempo de
+              bendición, reflexión y crecimiento.
+            </p>
+            <p>Con todo nuestro cariño.</p>
+            <p> Apóstol Justo Cruz</p>
+          </blockquote>
+        </section>
         <section className={`${styles.section} ${styles.counter}`}>
           <h2 className={styles.sectionTitle}>Faltan</h2>
           <div className={styles.countdown}>
@@ -61,104 +90,49 @@ export default function WeddingInvitation() {
             </div>
           </div>
           <div> 07 DE NOVIEMBRE DEL 2024</div>
-        </section>
-
-        <section className={styles.section}>
-        
-          <blockquote>
-            "Y sobre todas estas cosas, vestíos de amor, que es el vínculo perfecto"
+          <blockquote className={styles.textInvitationBiblia}>
+            <p>
+              "Y sobre todas estas cosas, vestíos de amor, que es el vínculo
+              perfecto"
+            </p>
             <p> Colosenses 3:14</p>
           </blockquote>
-          
-          <h2 className={styles.sectionTitle}>Confirmar Asistencia</h2>
-          <a
-            href="https://wa.me/1234567890?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20boda"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.whatsappButton}
-          >
-            Confirmar por WhatsApp
-          </a>
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Ubicación</h2>
-          <div className={styles.mapContainer}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3325395304414!2d-122.01116148467422!3d37.33463524513264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb59127ce078f%3A0x18e1c3ce7becf1b!2sApple%20Park!5e0!3m2!1sen!2sus!4v1637309850935!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-        </section>
-
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Código de Vestimenta</h2>
-          <div className={styles.dressCode}>
-            <div className={styles.dressCodeItem}>
-              <Clock className={styles.icon} />
-              <p>Formal</p>
-            </div>
-            <div className={styles.dressCodeItem}>
-              <MapPin className={styles.icon} />
-              <p>Elegante</p>
+          <div className={styles.churchContent}>
+            <h1 className={styles.title}> Bienvenidos a su Casa</h1>
+          <div className={styles.containerBtn}>
+            <button
+              className={styles.locationButton}
+              onClick={() =>
+                window.open(
+                  "https://maps.app.goo.gl/vayRnGAky3FRRydz5",
+                  "_blank"
+                )
+              }
+            >
+             <FaMapMarkerAlt/>  Ver Ubicación
+            </button>
+            
+            <a
+              href="https://wa.me/9618708310?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20Conferencia%20de%20Matrimonios"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.whatsappButton}
+            >
+              <FaWhatsapp/>
+              Si Asistiré
+            </a>
             </div>
           </div>
         </section>
 
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Nuestros Momentos</h2>
-          <div className={styles.gallery}>
-            <img
-              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-              className={styles.galleryImage}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-              className={styles.galleryImage}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-              className={styles.galleryImage}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-              className={styles.galleryImage}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-              className={styles.galleryImage}
-            />
-            <img
-              src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-              className={styles.galleryImage}
-            />
-          </div>
-        </section>
-
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Mesa de Regalos</h2>
-          <p className={styles.giftText}>
-            Si deseas hacernos un regalo, aquí tienes algunas opciones:
-          </p>
-          <div className={styles.giftRegistry}>
-            <a href="#" className={styles.giftLink}>
-              <Gift className={styles.icon} />
-              <p>Amazon</p>
-            </a>
-            <a href="#" className={styles.giftLink}>
-              <Gift className={styles.icon} />
-              <p>Liverpool</p>
-            </a>
-          </div>
-        </section>
+        <section className={styles.section}></section>
       </main>
 
       <footer className={styles.footer}>
-        <p>&copy; 2023 Ana & Chance. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Elohim Tuxtla.</p>
       </footer>
     </div>
   );
