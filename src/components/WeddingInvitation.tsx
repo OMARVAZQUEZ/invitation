@@ -34,7 +34,7 @@ export default function WeddingInvitation() {
           <div className={styles.headerContent}>
             <h1 className={styles.title}> Invitación</h1>
             <h2 className={styles.subtitle}>Conferencia para MATRIMONIOS </h2>
-            <p className={styles.date}>7 • NOVIEMBRE • 24</p>
+            <p className={styles.date}>9 • NOVIEMBRE • 24</p>
           </div>
           <div>
             <h2>CUPO LIMITADO</h2>
@@ -87,7 +87,7 @@ export default function WeddingInvitation() {
               <p>Segundos</p>
             </div>
           </div>
-          <div className={styles.date}> 7 • NOVIEMBRE • 24</div>
+          <div className={styles.date}> 9 • NOVIEMBRE • 24</div>
           <blockquote className={styles.textInvitationBiblia}>
             <p>
               "Y sobre todas estas cosas, vestíos de amor, que es el vínculo
