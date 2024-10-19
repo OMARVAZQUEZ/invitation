@@ -11,7 +11,7 @@ export default function WeddingInvitation() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2024-11-07T18:00:00"); // Set your wedding date here
+    const weddingDate = new Date("2024-11-09T18:00:00"); // Set your wedding date here
     const timer = setInterval(() => {
       const now = new Date();
       const difference = weddingDate.getTime() - now.getTime();
