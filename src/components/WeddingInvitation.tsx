@@ -10,8 +10,10 @@ export default function WeddingInvitation() {
     seconds: 0,
   });
 
+
+
   useEffect(() => {
-    const weddingDate = new Date("2024-11-09T18:00:00"); // Set your wedding date here
+    const weddingDate = new Date("2024-11-09T10:00:00"); // Set your wedding date here
     const timer = setInterval(() => {
       const now = new Date();
       const difference = weddingDate.getTime() - now.getTime();
@@ -35,6 +37,7 @@ export default function WeddingInvitation() {
             <h1 className={styles.title}> Invitación</h1>
             <h2 className={styles.subtitle}>Conferencia para MATRIMONIOS </h2>
             <p className={styles.date}>9 • NOVIEMBRE • 24</p>
+            <p className={styles.date}>Recepción: 10:00 AM</p>
           </div>
           <div>
             <h2>CUPO LIMITADO</h2>
@@ -45,21 +48,16 @@ export default function WeddingInvitation() {
       <main className={styles.main}>
         <section className={styles.section}>
           <blockquote className={styles.textInvitation}>
-            <p className={styles.subtitle}>QUERIDOS HERMANOS EN CRISTO.</p>
+            <h3 className={styles.date}>QUERIDOS HERMANOS EN CRISTO.</h3>
 
             <p>
               Con mucho cariño, les extendemos una cordial invitación a nuestra
               Conferencia para Matrimonios.
-            </p>
-
-            <p>
+              <br /><br />
               Este evento especial está diseñado para fortalecer el amor y la
               unión en el matrimonio, y profundizar en temas que son esenciales
               para una vida en pareja plena y armoniosa.
-            </p>
-
-            <p>
-              {" "}
+              <br /><br />
               Esperamos verlos allí, listos para compartir un tiempo de
               bendición, reflexión y crecimiento.
             </p>
@@ -88,6 +86,7 @@ export default function WeddingInvitation() {
             </div>
           </div>
           <div className={styles.date}> 9 • NOVIEMBRE • 24</div>
+          <p className={styles.date}>Recepción: 10:00 AM</p>
           <blockquote className={styles.textInvitationBiblia}>
             <p>
               "Y sobre todas estas cosas, vestíos de amor, que es el vínculo
@@ -110,7 +109,7 @@ export default function WeddingInvitation() {
               target="_blank"
               rel="noreferrer noopener"
             >
-             <FaMapMarkerAlt/>  Ver Ubicación
+             <FaMapMarkerAlt width={'50'}/>  Ver Ubicación
             </a>
             
             <a
