@@ -34,7 +34,7 @@
 }
 
 .headerContent {
-  padding: 0px 2px 60px 2px;
+  padding: 0px 2px 40px 2px;
   box-sizing: border-box;
   top: 0;
   background: linear-gradient(
@@ -101,7 +101,7 @@
 .sectionTitle {
   display: flex;
   font-family: "Great Vibes", cursive;
-  font-size: 3em;
+  font-size: 4em;
   letter-spacing: 0px;
   text-align: center;
   margin-top: 20px;
